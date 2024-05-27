@@ -1,27 +1,40 @@
 {
-    "name": "drewjbartlett/wordpress-eloquent",
-    "description": "A Laravel wrapper for wordpress which turns all Wordpress models into Laravel Eloquent Models.",
-    "keywords": ["wordpress", "eloquent", "laravel"],
-    "homepage": "https://github.com/drewjbartlett/wordpress-eloquent",
-    "support": {
-        "issues": "https://github.com/drewjbartlett/wordpress-eloquent/issues",
-        "source": "https://github.com/drewjbartlett/wordpress-eloquent"
+  "name": "cloak-labs/cloakwp-eloquent",
+  "version": "0.0.1",
+  "description": "A Laravel wrapper for WordPress that converts all WordPress tables into Laravel Eloquent Models.",
+  "keywords": [
+    "wordpress",
+    "eloquent",
+    "laravel",
+    "cloakwp"
+  ],
+  "homepage": "https://github.com/cloak-labs/cloakwp-eloquent",
+  "support": {
+    "issues": "https://github.com/cloak-labs/cloakwp-eloquent/issues",
+    "source": "https://github.com/cloak-labs/cloakwp-eloquent"
+  },
+  "authors": [
+    {
+      "name": "Kaelan Smith",
+      "email": "kaelancsmith@gmail.com",
+      "role": "Forked author"
     },
-    "authors": [
-        {
-            "name": "Drew J Bartlett",
-            "email": "drewjbartlett@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=5.6.4",
-        "illuminate/database": "^5.4"
-    },
-    "autoload": {
-        "psr-4": {
-            "WPEloquent\\": "WPEloquent/"
-        }
-    },
-    "license": "MIT"
+    {
+      "name": "Drew J Bartlett",
+      "email": "drewjbartlett@gmail.com",
+      "role": "Original author"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "illuminate/database": ">=11.7.0",
+    "illuminate/events": ">=11.7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "CloakWP\\Eloquent\\": "src/"
+    }
+  },
+  "license": "MIT"
 }
