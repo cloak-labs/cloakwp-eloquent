@@ -82,4 +82,15 @@ class Post extends \Illuminate\Database\Eloquent\Model
     return $query->status('publish');
   }
 
+  public function scopeByIds($query, array $ids)
+  {
+    return $query->whereIn('ID', $ids);
+  }
+
+  public function toArray()
+  {
+    $array = parent::toArray();
+    return apply_filters('cloakwp/eloquent/posts', $array);
+  }
+
 }
