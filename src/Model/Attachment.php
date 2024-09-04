@@ -22,7 +22,7 @@ class Attachment extends Post
    * Scope to filter attachments by taxonomy term.
    *
    * @param \Illuminate\Database\Eloquent\Builder $query
-   * @param array $termIdentifier an array of term IDs or slugs
+   * @param array $termIdentifiers an array of term IDs or slugs
    * @param string $taxonomy the taxonomy slug
    * @param string $identifierType ('id' or 'slug')
    * @return \Illuminate\Database\Eloquent\Builder
@@ -38,11 +38,5 @@ class Attachment extends Post
         $q->whereIn('slug', (array) $termIdentifiers);
       }
     });
-  }
-
-  public function toArray()
-  {
-    $array = parent::toArray();
-    return apply_filters('cloakwp/eloquent/attachments', $array);
   }
 }
