@@ -1,5 +1,5 @@
 {
-  "name": "cloak-labs/cloakwp-eloquent",
+  "name": "cloakwp/eloquent",
   "version": "0.0.4",
   "description": "A Laravel wrapper for WordPress that converts all WordPress tables into Laravel Eloquent Models.",
   "keywords": [
